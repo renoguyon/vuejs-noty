@@ -6,8 +6,8 @@ module.exports = Object.assign({}, baseConf, {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'vue2-noty.js',
-    library: ['vue2-noty'],
+    filename: 'vuejs-noty.js',
+    library: ['vuejs-noty'],
     libraryTarget: 'umd'
   },
   devtool: false,

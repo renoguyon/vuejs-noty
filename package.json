@@ -1,11 +1,11 @@
 {
-  "name": "vue2-noty",
+  "name": "vuejs-noty",
   "version": "0.0.1",
   "description": "Noty plugin for Vue.js 2",
-  "main": "./dist/vue2-noty.js",
+  "main": "./dist/vuejs-noty.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config ./build/webpack.dev.conf.js --content-base dev/ --port 8080",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/webpack.prod.conf.js",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/webpack.prod.conf.js",
     "prepublish": "npm run build"
   },
   "repository": {
