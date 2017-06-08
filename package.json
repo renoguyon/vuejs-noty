@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renoguyon/vue2-noty.git"
+    "url": "git+https://github.com/renoguyon/vuejs-noty.git"
   },
   "keywords": [
     "vuejs",
