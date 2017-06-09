@@ -1,4 +1,5 @@
 import Noty from 'noty'
+import './styles.less'
 
 const defaults = {
   layout: 'topRight',

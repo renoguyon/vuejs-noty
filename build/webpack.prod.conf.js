@@ -1,8 +1,10 @@
 const path = require('path')
 const baseConf = require('./webpack.base.conf');
 const webpack = require('webpack')
+const merge = require('webpack-merge')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
-module.exports = Object.assign({}, baseConf, {
+module.exports = merge(baseConf, {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -11,6 +13,17 @@ module.exports = Object.assign({}, baseConf, {
     libraryTarget: 'umd'
   },
   devtool: false,
+  module: {
+    rules: [
+      {
+        test: /\.less$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'less-loader']
+        })
+      }
+    ]
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -21,6 +34,7 @@ module.exports = Object.assign({}, baseConf, {
       compress: {
         warnings: false
       }
-    })
+    }),
+    new ExtractTextPlugin('vuejs-noty.css'),
   ]
 })

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import 'noty/lib/noty.css'
+  import '../src/styles.less'
 
   export default {
     methods: {
