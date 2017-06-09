@@ -10,7 +10,10 @@
   export default {
     methods: {
       show () {
-        this.$noty.info('Lorem ipsum dolot sit amet...')
+        this.$noty.info('Lorem ipsum dolot sit amet...', {
+          timeout: 5000,
+          progressBar: true
+        })
       }
     }
   }

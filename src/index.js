@@ -16,8 +16,8 @@ const VueNoty = {
     return this
   },
 
-  show (text, type = 'alert') {
-    const params = Object.assign({}, this.options, {
+  show (text, type = 'alert', opts = {}) {
+    const params = Object.assign({}, this.options, opts, {
       type,
       text
     })
@@ -25,20 +25,20 @@ const VueNoty = {
     new Noty(params).show()
   },
 
-  success (text) {
-    this.show(text, 'success')
+  success (text, opts = {}) {
+    this.show(text, 'success', opts)
   },
 
-  error (text) {
-    this.show(text, 'error')
+  error (text, opts = {}) {
+    this.show(text, 'error', opts)
   },
 
-  warning (text) {
-    this.show(text, 'warning')
+  warning (text, opts = {}) {
+    this.show(text, 'warning', opts)
   },
 
-  info (text) {
-    this.show(text, 'info')
+  info (text, opts = {}) {
+    this.show(text, 'info', opts)
   }
 }
 
