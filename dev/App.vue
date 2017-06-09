@@ -10,7 +10,7 @@
   export default {
     methods: {
       show () {
-        this.$noty.show('First message')
+        this.$noty.show('First message', 'error')
       }
     }
   }
