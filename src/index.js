@@ -45,6 +45,8 @@ const VueNoty = {
 
 export default {
   install: function (Vue, opts) {
-    Vue.prototype.$noty = VueNoty.setOptions(opts)
+    const noty = VueNoty.setOptions(opts)
+    Vue.prototype.$noty = noty
+    Vue.noty = noty
   }
 }

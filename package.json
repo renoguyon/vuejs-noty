@@ -22,9 +22,9 @@
   "author": "Reno Guyon <reno.guyon@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renoguyon/vue2-noty/issues"
+    "url": "https://github.com/renoguyon/vuejs-noty/issues"
   },
-  "homepage": "https://github.com/renoguyon/vue2-noty#readme",
+  "homepage": "https://github.com/renoguyon/vuejs-noty#readme",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
