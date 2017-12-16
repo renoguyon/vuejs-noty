@@ -80,5 +80,5 @@ this.$noty.info("Hey! Something very important here...", {
 })
 ```
 
-For more information about available configuration properties, please read [Noty's documentation](http://ned.im/noty/options.html).
+For more information about available configuration properties, please read [Noty's documentation](https://ned.im/noty/#/options).
 
