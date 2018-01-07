@@ -23,23 +23,23 @@ const VueNoty = {
       text
     })
 
-    new Noty(params).show()
+    return new Noty(params).show()
   },
 
   success (text, opts = {}) {
-    this.show(text, 'success', opts)
+    return this.show(text, 'success', opts)
   },
 
   error (text, opts = {}) {
-    this.show(text, 'error', opts)
+    return this.show(text, 'error', opts)
   },
 
   warning (text, opts = {}) {
-    this.show(text, 'warning', opts)
+    return this.show(text, 'warning', opts)
   },
 
   info (text, opts = {}) {
-    this.show(text, 'info', opts)
+    return this.show(text, 'info', opts)
   }
 }
 
