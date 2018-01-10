@@ -54,6 +54,8 @@ this.$noty.warning("Please review your information.")
 this.$noty.info("New version of the app is available!")
 ```
 
+All of these methods will return a Noty object instance, so you can use available [API methods](https://ned.im/noty/#/api).
+
 ## Configuration
 
 #### Config defaults
