@@ -17,13 +17,19 @@ const VueNoty = {
     return this
   },
 
+  create (params) {
+    return new Noty(params)
+  },
+
   show (text, type = 'alert', opts = {}) {
     const params = Object.assign({}, this.options, opts, {
       type,
       text
     })
 
-    return new Noty(params).show()
+    const noty = this.create(params)
+    noty.show()
+    return noty
   },
 
   success (text, opts = {}) {
