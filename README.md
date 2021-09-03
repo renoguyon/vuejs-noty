@@ -54,7 +54,23 @@ this.$noty.warning("Please review your information.")
 this.$noty.info("New version of the app is available!")
 ```
 
-All of these methods will return a Noty object instance, so you can use available [API methods](https://ned.im/noty/#/api).
+All of these methods will return a Noty object instance, so you can use available [API methods](https://ned.im/noty/#/api). Example:
+
+```js
+this.$noty.show("Hello world!").setTimeout(4500);
+```
+
+Create your own notification with access to the [full list of options](https://ned.im/noty/#/options). Example:
+
+```js
+this.$noty.create({
+    text: 'This is a custom notification!',
+    type: 'warning',
+    layout: 'topCenter',
+    timeout: 4500,
+    progressBar: false
+}).show();
+```
 
 ## Configuration
 
